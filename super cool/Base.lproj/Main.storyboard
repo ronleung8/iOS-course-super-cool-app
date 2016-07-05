@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="super_cool" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hi-res-9985c3a9dc6b9501bd41a74c71568272_crop_north" translatesAutoresizingMaskIntoConstraints="NO" id="MJN-T0-qKv">
+                                <rect key="frame" x="0.0" y="137" width="375" height="343"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pe4-UE-Ak4">
+                                <rect key="frame" x="109" y="319" width="157" height="30"/>
+                                <state key="normal" title="Click me"/>
+                                <connections>
+                                    <action selector="makemenotsouncool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6J6-Fy-we6"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GO-CAVS" translatesAutoresizingMaskIntoConstraints="NO" id="5Lu-68-WVn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="238"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="CoolLebron" destination="MJN-T0-qKv" id="jpW-Db-6a7"/>
+                        <outlet property="Coollogo" destination="5Lu-68-WVn" id="4YD-fP-iQx"/>
+                        <outlet property="button" destination="pe4-UE-Ak4" id="tHb-HF-jgY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="379.5" y="311.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GO-CAVS" width="428" height="79"/>
+        <image name="hi-res-9985c3a9dc6b9501bd41a74c71568272_crop_north" width="630" height="420"/>
+    </resources>
+</document>
